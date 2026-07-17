@@ -1,24 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Anthony Carvalha</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anthony Carvalha">
+  <meta name="description" content="Anthony Carvalha — IT Student. Portfolio, projects, and blog.">
+  <title>Anthony Carvalha | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Internal (document-level) styles: overrides specific to the home page only -->
+  <style>
+    .hero {
+      padding-top: 72px;
+    }
+    .featured-strip {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .featured-strip .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  </style>
+</head>
+<body data-theme="dark">
 
-        <h1>About Me</h1>
-        <p>Welcome to my portfolio!, my name is Anthony and i am a 4th year IT student. This website will be a showcase of my work and skills. Thank you for visiting!</p>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">MC_</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle">Switch to Light Mode</button>
+      </nav>
+    </div>
+  </header>
 
-        <footer>
-            <hr>
-            <p>&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="status-line">currently building things</p>
+          <h1>Hi, I'm Anthony — <span>I build small tools for real problems.</span></h1>
+          <p class="lead">
+            I'm a computer science student who likes turning messy, everyday
+            problems into simple web apps. This site is where I keep my
+            projects, my notes on how I built them, and a way to reach me.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn-primary">View Projects</a>
+            <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="img/maya-portrait.jpg" alt="Portrait photo of Maya Chen">
+        </div>
+      </div>
+    </section>
 
-            <nav>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a> 
-                <a href="projects.html">Projects</a> 
-                <a href="blog.html">Blog</a> 
-                <a href="contact.html">Contact</a>
-            </nav>
-        </footer>
-    </body>
+
+    
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-status">// last updated summer 2026</p>
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
