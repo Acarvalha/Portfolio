@@ -1,23 +1,91 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Anthony Carvalha</title>
-    </head>
-    <body>
-        <h1>Projects</h1>
-        <p>Welcome to my portfolio!, These are my projects</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anthony Carvalha">
+  <meta name="description" content="Projects built by Anthony Carvalha — web apps, tools, and experiments.">
+  <title>Anthony Carvalha | Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
 
-        <footer>
-            <hr>
-            <p>&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="home.html" class="logo">MC_</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle">Switch to Light Mode</button>
+      </nav>
+    </div>
+  </header>
 
-            <nav>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a> 
-                <a href="projects.html">Projects</a> 
-                <a href="blog.html">Blog</a> 
-                <a href="contact.html">Contact</a>
-            </nav>
-        </footer>
-    </body>
+  <main>
+    <section class="page-header">
+      <h1>Projects</h1>
+      <p>A collection of things I've built, from class assignments to weekend experiments.</p>
+    </section>
+
+    <!-- Search box, Do later -->
+    <section class="section" style="padding-bottom: 0;">
+      <div class="blog-controls">
+        <input type="text" id="filter-input" placeholder="Search projects by title or category…">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="grid" id="projects-grid">
+
+        <div class="card project-card" data-category="Web App">
+          <img src="img/project-taskflow.jpg" alt="Screenshot of the York Maintenance App" class="card-image">
+          <div class="card-body">
+            <p class="card-tag">Web App</p>
+            <h3 class="card-title">York Maintenance App</h3>
+            <p class="card-description">Front end development for a York University maintenance request system.</p>
+            <div class="card-links">
+              <a href="#">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card project-card" data-category="Machine Learning">
+          <img src="img/project-campusbites.jpg" alt="Screenshot of the Loan Predictor app" class="card-image">
+          <div class="card-body">
+            <p class="card-tag">Machine Learning</p>
+            <h3 class="card-title">Loan Predictor </h3>
+            <p class="card-description">A machine learning model to predict loan approval chances based on real-world data.</p>
+            <div class="card-links">
+                <!-- SOURCE CODE? PROB JUST GITHUB LINKS-->
+              <a href="#">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+     <!-- Shown by js/filter.js in Phase 2 when a search returns nothing -->
+      <p id="no-results">No results found. Try a different search term.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-status">// last updated summer 2026</p>
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>

@@ -1,23 +1,84 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Anthony Carvalha</title>
-    </head>
-    <body>
-        <h1>Resume</h1>
-        <p>Welcome to my portfolio!, This is my resume</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anthony Carvalha">
+  <meta name="description" content="Anthony Carvalha's resume — view or download as PDF.">
+  <title>Anthony Carvalha | Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
 
-        <footer>
-            <hr>
-            <p>&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="home.html" class="logo">MC_</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle">Switch to Light Mode</button>
+      </nav>
+    </div>
+  </header>
 
-            <nav>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a> 
-                <a href="projects.html">Projects</a> 
-                <a href="blog.html">Blog</a> 
-                <a href="contact.html">Contact</a>
-            </nav>
-        </footer>
-    </body>
+  <main>
+    <section class="page-header">
+      <h1>Resume</h1>
+      <p>You can view my resume directly below, or download a copy for later.</p>
+    </section>
+
+    <section class="section">
+      <div class="resume-embed">
+        <!-- iframe embed as required; replace src with your actual resume PDF path -->
+        <iframe src="assets/anthony-carvalha-resume.pdf" title="Anthony Carvalha Resume PDF"></iframe>
+      </div>
+      <div class="resume-download">
+        <a href="assets/anthony-carvalha-resume.pdf" download class="btn btn-primary">Download Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-header">
+        <p class="section-eyebrow">Quick Highlights</p>
+        <h2>Where I've spent my time</h2>
+      </div>
+      <div class="info-columns">
+        <div class="info-block">
+          <h3>Experience</h3>
+          <ul>
+            <li><strong>Front Desk Help</strong><span>Oct 2019 – Sept 2022</span></li>
+            <li><strong>Music Instructor</strong><span>Jan 2026 - Present</span></li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Certifications</h3>
+          <ul>
+            <li><strong> Google Cybersecurity Professional Certificate </strong><span>Coursera</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-status">// last updated summer 2026</p>
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
