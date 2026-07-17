@@ -1,24 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Anthony Carvalha</title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Anthony Carvalha">
+  <meta name="description" content="Anthony Carvalha — IT Student. Portfolio, projects, and blog.">
+  <title>Anthony Carvalha | About Me</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
 
-        <h1>About Me</h1>
-        <p>Welcome to my portfolio!, my name is Anthony and i am a 4th year IT student. This website will be a showcase of my work and skills. Thank you for visiting! im le goat lol</p>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a href="index.html" class="logo">MC_</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <button id="theme-toggle">Switch to Light Mode</button>
+      </nav>
+    </div>
+  </header>
 
-        <footer>
-            <hr>
-            <p>&copy; 2026 Anthony Carvalha. All Rights Reserved.</p>
+  <main>
+    <section class="page-header">
+      <h1>About Me</h1>
+      <p>A little about who I am, what I've studied, and what I care about.</p>
+    </section>
 
-            <nav>
-                <a href="about.html">About Me</a>
-                <a href="resume.html">Resume</a> 
-                <a href="projects.html">Projects</a> 
-                <a href="blog.html">Blog</a> 
-                <a href="contact.html">Contact</a>
-            </nav>
-        </footer>
-    </body>
+    <section class="section">
+      <div class="bio-block">
+        <p>
+          I'm entering my fourth year of Information Technology. 
+          My interest in tech started when I was a kid playing video games. 
+          Slowly I learned how to build my own computers and eventually started learning how to code.
+        </p>
+        <p>
+          Outside of school, I enjoy playing video games, watching soccer,
+          and training combat sports(especially Brazilian Jiu-Jitsu).
+          I also have started extra curricular studies in cybersecurity 
+          and am trying to obtain the compTIA Security+ and Network+ certs. 
+        </p>
+      </div>
+
+      <div class="info-columns">
+        <!-- Ordered list: education is inherently sequential -->
+        <div class="info-block">
+          <h3>Education</h3>
+          <ol>
+            <li><strong>B.Sc. Computer Science</strong><span>2023 – 2027</span></li>
+            <li><strong>Web Development Certificate</strong><span>2024</span></li>
+            <li><strong>High School Diploma</strong><span>2023</span></li>
+          </ol>
+        </div>
+
+        <!-- Unordered list: skills have no inherent order -->
+        <div class="info-block">
+          <h3>Skills</h3>
+          <ul>
+            <li><strong>HTML &amp; CSS</strong><span>Advanced</span></li>
+            <li><strong>JavaScript</strong><span>Intermediate</span></li>
+            <li><strong>Python</strong><span>Intermediate</span></li>
+            <li><strong>Git &amp; GitHub</strong><span>Advanced</span></li>
+            <li><strong>UI/UX Design</strong><span>Beginner</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="section-header">
+        <p class="section-eyebrow">Beyond Code</p>
+        <h2>Interests</h2>
+      </div>
+      <div class="info-columns" style="max-width: 640px;">
+        <div class="info-block" style="grid-column: 1 / -1;">
+          <ul>
+            <li><strong>Hiking</strong><span>Weekend trails nearby</span></li>
+            <li><strong>Board Games</strong><span>Especially co-op strategy</span></li>
+            <li><strong>Peer Tutoring</strong><span>CS 1000-level courses</span></li>
+            <li><strong>Photography</strong><span>Mostly film, mostly landscapes</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-status">// last updated summer 2026</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Maya Chen. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
 </html>
