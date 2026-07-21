@@ -1,5 +1,6 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("theme-toggle");
+function initThemeToggle() {
+  const toggleBtn = document.getElementById("theme-toggle");
+  if (!toggleBtn) return;
 
     function applyTheme(theme) {
         document.body.setAttribute("data-theme", theme);
@@ -20,4 +21,5 @@ document.addEventListener("DOMContentLoaded", function () {
         applyTheme(next);
         });
     loadSavedTheme(); // Run on every page load
-    });
+
+    };
