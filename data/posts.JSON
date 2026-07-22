@@ -1,0 +1,10 @@
+[
+ {
+ "id": 1,
+ "title": "My Post Title",
+ "date": "2025-06-01",
+ "summary": "A short description of the post.",
+ "category": "Tutorial",
+ "content": "Full post body text goes here."
+ }
+]
