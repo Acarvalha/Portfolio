@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="style.css">
   <script src="js/components.js"></script>
   <script src="js/theme.js" defer></script>
+  <script src="js/blog.js" defer></script>
+  
 
 </head>
 <body data-theme="dark">
@@ -30,28 +32,10 @@
     </section>
 
     <section class="section">
-      <!--
-        Just layout, using JS in phase 2 to fill in the real posts from data/posts.json. This placeholder card is here so the page renders correctly and the grid/spacing can be styled ahead of time.
-      -->
-      <div id="blog-list">
-        <div class="post-card">
-          <span class="latest-badge">Latest Post</span>
-          <p class="post-meta">June 15, 2026 · Tutorial</p>
-          <h2>Placeholder Post Title</h2>
-          <p class="post-summary">
-            This card shows the layout Phase 2 will populate dynamically from
-            <code>data/posts.json</code>. Real posts will replace this once
-            the fetch logic is added.
-          </p>
-          <button class="read-more-btn">Read More</button>
-          <div class="post-full-content">
-            Full post content will render here when expanded, once dynamic
-            loading is implemented in Phase 2.
-          </div>
-        </div>
-      </div>
-
+  
+      <div id="blog-list"></div>
       <p id="no-results">No results found. Try a different search term.</p>
+
     </section>
   </main>
 

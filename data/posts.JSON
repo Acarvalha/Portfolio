@@ -1,10 +1,28 @@
 [
- {
- "id": 1,
- "title": "My Post Title",
- "date": "2025-06-01",
- "summary": "A short description of the post.",
- "category": "Tutorial",
- "content": "Full post body text goes here."
- }
+    {
+        "id": 1,
+        "title": "My Post Title",
+        "date": "2025-06-15",
+        "summary": "A short description of the post.",
+        "category": "Tutorial",
+        "content": "Full post body text goes here. blah blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah"
+    },
+
+    {
+        "id": 2,
+        "title": "Another Post Title",
+        "date": "2025-06-02",
+        "summary": "A brief overview of another post.",
+        "category": "News",
+        "content": "Full content of the second post."
+    },
+    {
+        "id": 3,
+        "title": "Yet Another Post",
+        "date": "2025-06-03",
+        "summary": "Summary of yet another post.",
+        "category": "Opinion",
+        "content": "Full content of the third post."
+    }
 ]
+
