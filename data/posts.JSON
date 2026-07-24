@@ -1,28 +1,36 @@
 [
     {
         "id": 1,
-        "title": "My Post Title",
-        "date": "2025-06-15",
-        "summary": "A short description of the post.",
-        "category": "Tutorial",
-        "content": "Full post body text goes here. blah blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah"
+        "title": "Part 1",
+        "date": "2026-07-24",
+        "summary": "Theme Switcher with Persistant Prefernce.",
+        "category": "Blog Documentation",
+        "content": ""
     },
 
     {
         "id": 2,
-        "title": "Another Post Title",
-        "date": "2025-06-02",
-        "summary": "A brief overview of another post.",
-        "category": "News",
+        "title": "Part 2",
+        "date": "2026-07-25",
+        "summary": "Dynamic Blog / News Section.",
+        "category": "Blog Documentation",
         "content": "Full content of the second post."
     },
     {
         "id": 3,
-        "title": "Yet Another Post",
-        "date": "2025-06-03",
-        "summary": "Summary of yet another post.",
-        "category": "Opinion",
+        "title": "Part 4",
+        "date": "2026-07-26",
+        "summary": "Contact Form Validation.",
+        "category": "Blog Documentation",
         "content": "Full content of the third post."
+    },
+    {
+        "id": 4,
+        "title": "Part 5",
+        "date": "2026-07-27",
+        "summary": "Projects / Blog Filter.",
+        "category": "Blog Documentation",
+        "content": "Full content of the second post."
     }
 ]
 
