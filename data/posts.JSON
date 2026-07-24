@@ -5,7 +5,12 @@
         "date": "2026-07-24",
         "summary": "Theme Switcher with Persistant Prefernce.",
         "category": "Blog Documentation",
-        "content": ""
+        "content": [ "Step one was to save the current theme in local storage, this way whenever the user refreshes the page, the theme stays the same.",
+                    " Next I created a function that checks if there is a saved theme and loads it. If nothing is saved, it will by default load as dark mode.", 
+                    "(I know you wanted light mode but dark mode looks better).",
+                    " Lastly, if the button is pressed, the theme will check the current theme, and swap to the other theme, finally saving it by calling the first function."
+                 ]
+    
     },
 
     {
@@ -14,7 +19,8 @@
         "date": "2026-07-25",
         "summary": "Dynamic Blog / News Section.",
         "category": "Blog Documentation",
-        "content": "Full content of the second post."
+        "content": [""
+                ]
     },
     {
         "id": 3,
