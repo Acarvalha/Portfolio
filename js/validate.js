@@ -2,16 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("contact-form");
     function showError(fieldId, message) {
         const field = document.getElementById(fieldId);
-        // TODO: Find or create an error element next to the field
-        // TODO: Set its text to message and make it visible
-        // Hint: use field.nextElementSibling or a dedicated <span class="error-msg">
+        const errorSpan = document.getElementById(fieldId + "-error");
+        errorSpan.textContent = message;
+        errorSpan.classList.add("visible");
+        field.classList.add("invalid");
+        
+        
         }
     function clearError(fieldId) {
-        // TODO: Hide or clear the error message for this field
+        const field = document.getElementById(fieldId);
+        const errorSpan = document.getElementById(fieldId + "-error");
+        errorSpan.textContent = "";
+        errorSpan.classList.remove("visible");
+        field.classList.remove("invalid");
         }
     function validateEmail(email) {
-        // TODO: Return true if email matches a valid format, false otherwise
-        // Hint: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
         }
     form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -19,10 +25,39 @@ document.addEventListener("DOMContentLoaded", function () {
         const name = document.getElementById("name").value.trim();
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
-        // TODO: Validate name — show error if empty
-        // TODO: Validate email — show error if empty or invalid format
-        // TODO: Validate message — show error if fewer than 20 characters
-        // TODO: If isValid is true, show a success message
+        
+        if (name === "") {
+            showError("name", "Please enter your name.");
+            isValid = false; 
+            }
+        else {
+            clearError("name");
+            }
+
+        if (email === "") {
+            showError("email", "Please enter your email.");
+            isValid = false;
+        } else if (!validateEmail(email)) {
+            showError("email", "Please enter a valid email address.");
+            isValid = false;
+        } else {
+            clearError("email");
+        }
+
+        if (message === "") {
+            showError("message", "Please enter your message.");
+            isValid = false;
+        } else if (message.length < 20) {
+            showError("message", "Your message must be at least 20 characters long.");
+            isValid = false;
+        } else {
+            clearError("message");
+        }
+
+        if (isValid) {
+            form.style.display = "none"; // Hide the form
+            document.getElementById("form-success").classList.add("visible"); // Show success message
+        }
         });
     // Bonus: clear errors as the user types
     ["name", "email", "message"].forEach(function (id) {
