@@ -1,38 +1,57 @@
 [
     {
         "id": 1,
-        "title": "Part 1",
+        "title": "Part 1: Theme Switcher with Persistent Preference",
         "date": "2026-07-24",
-        "summary": "Theme Switcher with Persistant Prefernce.",
+        "summary": "How I built a light/dark mode toggle that remembers your choice using localStorage.",
         "category": "Blog Documentation",
-        "content": [ "Step one was to save the current theme in local storage, this way whenever the user refreshes the page, the theme stays the same.",
-                    " Next I created a function that checks if there is a saved theme and loads it. If nothing is saved, it will by default load as dark mode.", 
-                    "(I know you wanted light mode but dark mode looks better).",
-                    " Lastly, if the button is pressed, the theme will check the current theme, and swap to the other theme, finally saving it by calling the first function."
+        "content": ["I needed to support both light and dark themes for my portfolio website, and I wanted to give users the ability to switch between them.",
+                    "First, before even getting to the theme switcher, I set up the CSS for both themes,", 
+                    "one as root for light mode, and a seperate for dark mode. Since custom properties are inherited",
+                    "the rest of the CSS doesn't need to be duplicated, and I can just change the root variables to switch themes.",
+                    "On the JS side I created a function to toggle the theme, and I added an event listener to the theme switcher button.",
+                    "I also wanted to make sure that the user's preference was remembered, so I used localStorage to store the current theme. When the page loads",
+                    " I check localStorage for a saved theme and apply it if it exists." ,
+                    "If localStorage doesn't have a saved theme, I deafult to the dark-theme (i think it looks better sry).",
+                    "The hardest part was making sure that the light/dark mode button actually persisted between sites", 
+                    "to test i made sure to switch to light mode, and change pages, makiung sure light mode persisted and the button was still correct"
                  ]
     
     },
 
     {
         "id": 2,
-        "title": "Part 2",
+        "title": "Part 3: Dynamic Blog Section",
         "date": "2026-07-25",
-        "summary": "Dynamic Blog / News Section.",
+        "summary": "Loading and rendering blog posts from a JSON file instead of hardcoding them into HTML.",
         "category": "Blog Documentation",
-        "content": [""
+        "content": ["Before part 3, I only had a placeholder blog to make sure my css looked clean",
+                    " the goal for this part was to replace the hardcoded blog with dynamic content loaded from a JSON file.",
+                    " just rendering one post was fairly simple, but the difficulty came when adding multiple posts and sort them by date.",
+                    " The first step to sorting was converting the date string into an actual objecet, so I could compare them and sort them in descending order.",
+                    " The latest post badge was supprisingly easy, as I already had a sorted array of posts",
+                    " All i needed to do was look at the first post in the array and add a badge to it, and remove the badge from all other posts.",
+                    " The last piece was making the read more function",
+                    " Initially I wanted to centre the full content, and dim the rest of the page", 
+                    " This ended up being a bit complicated, and I decided to finish it at the end, however the rest of the assigment took some time and I have other course work as well", 
+                    "so i settled on just expaning the card to show the full content, and adding a read less button to collapse it back down.(although I might try to finish this later after exams are over)"
                 ]
     },
     {
         "id": 3,
-        "title": "Part 4",
+        "title": "Part 4: Contact Form Validation",
         "date": "2026-07-26",
-        "summary": "Contact Form Validation.",
+        "summary": "Validating name, email, and message fields on the client side with inline error messages.",
         "category": "Blog Documentation",
-        "content": "Full content of the third post."
+        "content": ["",
+                    "",
+                    ""
+    ]
+                    
     },
     {
         "id": 4,
-        "title": "Part 5",
+        "title": "Part 5: Projects / Blog Filter    ",
         "date": "2026-07-27",
         "summary": "Projects / Blog Filter.",
         "category": "Blog Documentation",
