@@ -43,19 +43,31 @@
         "date": "2026-07-26",
         "summary": "Validating name, email, and message fields on the client side with inline error messages.",
         "category": "Blog Documentation",
-        "content": ["",
-                    "",
-                    ""
-    ]
+        "content": ["The contact form needed to validate three fields before it could submit: A non-empty name, a email formated correctly, and a message of at least 20 charecters",
+                    "If these werent valid, an error message should appear which will disapear when a correct input is given. If all are successfull",
+                    " a sucess message takes the place of the form(right now I have a simulated version of a submission but i would like to be able ro actually receive submissions)",
+                    "First I had to intercept the message using preventDefault inside a submit event listener. Next I used a showError and clearError function. One to display the error",
+                    "and another to clear errors when a user types. When the submit button is pressed the submit handler, a check is made for all three fields making sure all three pass",
+                    " and only displaying the sucess message after all three are cleared."
+                ]
                     
     },
     {
         "id": 4,
         "title": "Part 5: Projects / Blog Filter    ",
         "date": "2026-07-27",
-        "summary": "Projects / Blog Filter.",
+        "summary": "Adding live search filtering to both the Projects and Blog pages without any page reloads.",
         "category": "Blog Documentation",
-        "content": "Full content of the second post."
+        "content": ["Using the search bar already added, functionality is needed to actually sort through blog and project posts",
+                    "as the user types, the page should automaticaly show the matching cards and hide the rest without a page reload",
+                    "and I needed to match against btoh title and category. If no results are found, a no results message will show. ",
+                    "The logic runs a check for every key stroke inside the search box, where it will check if a cards title or category is typed",
+                    "and will show those specific cards. A count was made to check for how many cards are still visible",
+                    " and if this count reaches 0, the no results message will show. The hardest part of this section was trying to get the logic to work on two seperate pages",
+                    " each with seperate structures. My projects page has static cards with attributes present from the start ",
+                    " but my blog page dynamically loads cards using JavaScript. To solve this I made the filter callable from two different places",
+                    "immediately for projects, and from right inside the blog-rendering code itself, right after all the cards are created."
+                ]
     }
 ]
 
