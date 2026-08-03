@@ -1,6 +1,11 @@
 function initFilter(cardSelector) {
     const filterInput = document.getElementById("filter-input");
     const noResults = document.getElementById("no-results");
+    
+    if (!filterInput || !noResults  ) {
+        return;
+    }
+
     const cards = document.querySelectorAll(cardSelector);
 
     filterInput.addEventListener("input", function () {

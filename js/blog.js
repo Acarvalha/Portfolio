@@ -38,6 +38,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         blogList.appendChild(postElement);
         });
+
+        if (typeof initFilter === "function") {
+            initFilter(".post-card");
+        }
+        
     })
     .catch(error => console.error("Error loading posts:", error));
 });
